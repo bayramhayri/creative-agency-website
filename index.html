@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Creative Agency</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__logo">
+        <img src="images/logo.svg" alt="logo" />
+      </div>
+      <div class="toggle"></div>
+      <div class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="services.html">Services</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="work.html">Work</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <div class="header__social-bar">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="https://facebook.com">
+                <svg class="navigation__icon">
+                  <use xlink:href="images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="https://instagram.com">
+                <svg class="navigation__icon">
+                  <use xlink:href="images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="https://twitter.com">
+                <svg class="navigation__icon">
+                  <use xlink:href="images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <a
+            href="mailto:you@email.com"
+            class="navigation__link navigation__link--email-icon"
+          >
+            <svg class="navigation__icon">
+              <use
+                xlink:href="images/sprite.svg#alternate_email_black_24dp"
+              ></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Section -->
+    <section class="section section--home">
+      <div class="section__content">
+        <h1 class="heading-1">
+          We help to achieve <br />
+          your goals.
+        </h1>
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia labore
+          asperiores laborum odio tenetur! Ipsum ipsa sapiente nihil unde
+          repellendus, ad sunt voluptatibus distinctio minima quia iste enim.
+        </p>
+        <a href="contact.html" class="btn">Get Started</a>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function () {
+        window.setTimeout(
+          document.querySelector('svg').classList.add('animated'),
+          1000
+        );
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+%heading {
+  font-family: $font-primary;
+  font-weight: 500;
+}
+
+.heading-1 {
+  @extend %heading;
+  font-size: 3rem;
+}
+
+.paragraph {
+  font-size: 1.75rem;
+  margin: 2rem 0 1rem;
+}

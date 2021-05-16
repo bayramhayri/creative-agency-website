@@ -1,0 +1,53 @@
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  margin-top: 4rem;
+  text-align: center;
+
+  @include respond(tab-port) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-top: 3rem;
+  }
+
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .service {
+    padding: 2.6rem;
+    background-color: #fdfdfd;
+    transition: all 0.3s ease-in-out;
+
+    @include respond(tab-port) {
+      padding: 1.8rem;
+    }
+
+    @include respond(phone) {
+      padding: 1.4rem;
+    }
+
+    &__icon-img {
+      max-width: 10rem;
+
+      @include respond(tab-port) {
+        max-width: 9rem;
+      }
+
+      @include respond(phone) {
+        max-width: 8rem;
+      }
+    }
+
+    &__title {
+      padding: 1rem;
+    }
+
+    &:hover {
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    }
+  }
+}
